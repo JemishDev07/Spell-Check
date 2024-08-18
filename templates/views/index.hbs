@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Check</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Welcome to the Spell World</h1>
+        {{>header}}
+
+        <h1>{{title}}</h1>
+    </div>
+
+    <div class="text-content">
+        <form>
+            <textarea placeholder=" Enter Your Text Here" rows="15" cols="80" id="inpuText"></textarea>
+            <p id="result"></p>
+            <button id="btnSubmit">Get Your Result</button>
+        </form>   
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
