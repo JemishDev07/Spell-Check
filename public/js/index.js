@@ -7,7 +7,7 @@ btnSumbit.addEventListener("click", (event) => {
   event.preventDefault();
 
   const text = inputText.value;
-  // console.log(text);
+  console.log(text);
 
   if (text) {
     fetch("/spellcheck", {
@@ -28,7 +28,7 @@ btnSumbit.addEventListener("click", (event) => {
         resultText.textContent = `Your Correct Text: ${correctText}`;
       })
       .catch((error) => {
-        // console.error(error);
+        console.error(error);
       });
   } else {
     resultText.textContent = "Please Enter Your Text";
